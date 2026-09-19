@@ -17,7 +17,7 @@
         {
           "id": "p2",
           "scrollOverflowPx": 0,
-          "freeSpaceAboveFooterPx": 40,
+          "freeSpaceAboveFooterPx": 49,
           "pageHeightPx": 1123
         }
       ]
@@ -37,7 +37,7 @@
           "id": "p2",
           "scrollOverflowPx": 0,
           "freeSpaceAboveFooterPx": 19,
-          "pageHeightPx": 1586
+          "pageHeightPx": 1496
         }
       ]
     }

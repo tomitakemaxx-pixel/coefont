@@ -155,9 +155,7 @@ await browser.close();
 // ---- Thai review file -------------------------------------------------------
 const lines = [];
 lines.push('CoeFont AI Interpreter - Participant Guide (Thai)  v1 / 2026-09');
-lines.push('タイ語レビュー用 対訳リスト');
-lines.push('タイ語は英語原文からの翻訳です。現地スタッフの確認をお願いします。');
-lines.push('（TH = タイ語 / EN = 英語 / JA = 日本語参考）');
+lines.push('対訳一覧（TH = タイ語 / EN = 英語 / JA = 日本語）');
 lines.push('='.repeat(78));
 lines.push('');
 for (const r of reviewRows) {

@@ -52,6 +52,10 @@
         var img = document.createElement('img');
         img.src = src;
         el.insertBefore(img, el.firstChild);
+        // the caption's ［要確認：実画面に差替］ marker no longer applies
+        var fig = el.closest('figure');
+        var ja = fig && fig.querySelector('figcaption .ja');
+        if (ja) ja.textContent = ja.textContent.replace(/［要確認[^］]*］/g, '').trim();
       }
       var mk = (el.dataset.marker || '').split(',').map(function (s) { return s.trim(); });
       var step = el.closest('.step');
@@ -73,6 +77,11 @@
         qimg.src = opts.qrDataUrl;
         slot.appendChild(qimg);
       }
+    }
+    // every figure replaced by a real screenshot -> the "these are illustrations" note is no longer true
+    if (!document.querySelector('.shot svg')) {
+      var note = document.querySelector('#illustration-note');
+      if (note && note.parentElement) note.parentElement.style.display = 'none';
     }
     protectThai(document.body);
   };

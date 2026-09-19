@@ -118,9 +118,6 @@ ol.trouble li::before{content:counter(t);position:absolute;left:0;top:.6mm;width
 .footer{position:absolute;left:15mm;right:15mm;bottom:8mm;border-top:.5pt solid #bbb;padding-top:1.8mm;display:flex;justify-content:space-between;align-items:flex-end;font-family:'Noto Sans',sans-serif;font-size:7.6pt;color:#666;}
 .footer .jaf{display:none;}
 body.v-internal .footer .jaf{display:inline;font-family:'Noto Sans JP',sans-serif;}
-.review-note{display:none;}
-body.v-internal .review-note{display:block;margin-top:4mm;border:.8pt dashed #c8102e;padding:2.6mm 3mm;}
-body.v-internal .review-note p{font-family:'Noto Sans JP',sans-serif;font-size:8.6pt;line-height:1.55;color:#c8102e;margin:0;}
 .content{position:relative;}
 body.v-minister figcaption .en{display:none;}
 .tight-note{margin-top:2.6mm;}
@@ -280,7 +277,7 @@ body.v-internal .step.nofig{grid-template-columns:1fr;}
   </section>
 
   <section class="tight-note">
-    <div class="note-line pair" data-key="note.illustration" >
+    <div class="note-line pair" id="illustration-note" data-key="note.illustration" >
       <p class="th">ภาพในคู่มือนี้เป็นภาพประกอบเพื่ออธิบายขั้นตอน หน้าจอจริงอาจแตกต่างเล็กน้อย</p>
       <p class="en">The images in this guide are illustrations of the steps. The actual screen may differ slightly.</p>
     </div>
@@ -463,11 +460,6 @@ body.v-internal .step.nofig{grid-template-columns:1fr;}
   </section>
 
 
-  <section>
-    <div class="review-note">
-      <p>［社内メモ・配布前に削除／タイ語は要確認］タイ語は英語原文からの機械翻訳です。現地スタッフによる確認後に確定してください（対訳は output/thai_text_for_review.txt）。図は説明用イメージのため、実画面のスクリーンショットを input/screenshots/ に置いて再生成してください。</p>
-    </div>
-  </section>
   <div class="footer">
     <span>For internal use &ndash; Nippon Steel Trading Corporation<span class="jaf">／社内利用限定</span></span>
     <span>v1 &middot; 2026-09 &nbsp;&nbsp; 2 / 2</span>
