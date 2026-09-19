@@ -16,7 +16,7 @@ function loadModule(name) {
 }
 const { chromium } = loadModule('playwright');
 
-const PDF = path.join(ROOT, 'output', 'CoeFont_Guide_TH_Minister_v1.pdf');
+const PDF = path.join(ROOT, 'output', 'CoeFont_Guide_TH_v2.pdf');
 const results = [];
 const ok = (name, pass, detail = '') => results.push({ name, pass, detail });
 const sh = (cmd, args) => execFileSync(cmd, args, { encoding: 'utf8' });
@@ -65,11 +65,20 @@ const dom = await page.evaluate(() => {
     step: el.closest('.step')?.querySelector('.num')?.textContent || '',
     isIllustration: Boolean(el.querySelector('svg')),
   }));
+  const clipped = [...document.querySelectorAll('.page')].map((pg) => {
+    const footer = pg.querySelector('.footer').getBoundingClientRect();
+    let lowest = 0;
+    pg.querySelectorAll(':scope > *').forEach((el) => {
+      if (el.classList.contains('footer')) return;
+      lowest = Math.max(lowest, el.getBoundingClientRect().bottom);
+    });
+    return { id: pg.id, over: Math.round(lowest - footer.top) };
+  });
   const p1 = document.querySelector('#p1');
+  const accessNote = p1.querySelector('[data-key="access.note"]');
   const fill = {
-    writeins: p1.querySelectorAll('.writein').length,
-    qr: Boolean(p1.querySelector('#qr-slot')),
-    filled: (p1.querySelector('#qr-slot')?.textContent || '').trim(),
+    hasNote: Boolean(accessNote),
+    mentionsAll: ['QR', 'Teams'].every((w) => (accessNote?.textContent || '').includes(w)),
   };
   const phrases = [...document.querySelectorAll('.pcol')].map((c) => ({
     head: c.querySelector('h3 .en')?.textContent?.trim(),
@@ -92,16 +101,18 @@ const dom = await page.evaluate(() => {
     ls.push(t.slice(start));
     if (ls.length > 1) lines.push(ls.map((x) => x.replace(/⁠/g, '')));
   });
-  return { order, markers, fill, phrases, lines };
+  return { order, markers, fill, phrases, lines, clipped };
 });
 await browser.close();
 
+ok('本文がページ内に収まっている（欠けがない）', dom.clipped.every((c) => c.over <= 0),
+   dom.clipped.map((c) => `${c.id}: ${c.over > 0 ? `${c.over}px はみ出し` : `余白 ${-c.over}px`}`).join(' | '));
 ok('すべての段落がタイ語→英語→日本語の順', dom.order.every((o) => o.okOrder),
    dom.order.filter((o) => !o.okOrder).map((o) => `${o.key}:${o.seq}`).join(' | '));
-ok('図の番号と本文のステップ番号が一致', dom.markers.every((m) => m.marker === m.step),
+ok('図の番号と本文のステップ番号が一致', dom.markers.filter((m) => m.marker).every((m) => m.marker === m.step),
    dom.markers.map((m) => `${m.shot}=${m.marker || '-'}/step${m.step}`).join(' | '));
-ok('URL・パスコード・QRの記入枠が1ページ目にある', dom.fill.writeins === 2 && dom.fill.qr,
-   `writein x${dom.fill.writeins}, QR box: ${dom.fill.qr ? 'yes' : 'no'}${dom.fill.filled ? ` (${dom.fill.filled})` : ''}`);
+ok('リンク・パスコード・QRの入手方法が1ページ目にある', dom.fill.hasNote && dom.fill.mentionsAll,
+   dom.fill.hasNote ? 'Teams会議チャットに自動投稿される旨を明記' : '記載なし');
 ok('英語の定型フレーズが両方向とも載っている', dom.phrases.length === 2 && dom.phrases.every((p) => p.count > 0),
    dom.phrases.map((p) => `${p.head}: ${p.count}`).join(' | '));
 

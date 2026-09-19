@@ -3,7 +3,6 @@
  *
  * Usage:
  *   node scripts/build.mjs                      # build both variants
- *   node scripts/build.mjs --qr "https://..."   # also render a QR code into the QR box
  *
  * Real screenshots: put PNG files in input/screenshots/ named after the data-shot
  * attribute in src/guide.html (e.g. pc_03_language.png). They replace the illustrations
@@ -30,15 +29,9 @@ function loadModule(name, { optional = false } = {}) {
 }
 
 const { chromium } = loadModule('playwright');
-const QRCode = loadModule('qrcode', { optional: true });
-
-const args = process.argv.slice(2);
-const qrIndex = args.indexOf('--qr');
-const qrUrl = qrIndex >= 0 ? args[qrIndex + 1] : null;
-
 const VARIANTS = [
-  { id: 'minister', file: 'CoeFont_Guide_TH_Minister_v1', query: '' },
-  { id: 'internal', file: 'CoeFont_Guide_TH-JA_internal_v1', query: '?variant=internal' },
+  { id: 'staff', file: 'CoeFont_Guide_TH_v2', query: '' },
+  { id: 'internal', file: 'CoeFont_Guide_TH-JA_internal_v2', query: '?variant=internal' },
 ];
 
 const OUT = path.join(ROOT, 'output');
@@ -58,15 +51,6 @@ function collectScreenshots() {
   return map;
 }
 
-let qrDataUrl = null;
-if (qrUrl) {
-  if (!QRCode) {
-    console.warn('! --qr given but the "qrcode" package is not installed (npm install). QR box left blank.');
-  } else {
-    qrDataUrl = await QRCode.toDataURL(qrUrl, { margin: 0, width: 600, errorCorrectionLevel: 'M' });
-  }
-}
-
 const shots = collectScreenshots();
 const shotNames = Object.keys(shots);
 console.log(shotNames.length
@@ -74,7 +58,7 @@ console.log(shotNames.length
   : 'No files in input/screenshots/ - using the built-in screen illustrations.');
 
 const browser = await chromium.launch();
-const report = { variants: [], screenshots: shotNames, qr: Boolean(qrDataUrl) };
+const report = { variants: [], screenshots: shotNames };
 let reviewRows = null;
 
 for (const v of VARIANTS) {
@@ -87,7 +71,7 @@ for (const v of VARIANTS) {
   await page.evaluate(() => document.fonts.ready);
 
   await page.addScriptTag({ path: path.join(ROOT, 'src', 'enhance.js') });
-  await page.evaluate((opts) => window.applyGuideEnhancements(opts), { shots, qrDataUrl });
+  await page.evaluate((opts) => window.applyGuideEnhancements(opts), { shots });
 
   await page.waitForTimeout(150);
 
@@ -132,7 +116,7 @@ for (const v of VARIANTS) {
 
   // PNGs (for viewing on a phone) only for the distributed Thai guide
   const pngs = [];
-  if (v.id === 'minister') {
+  if (v.id === 'staff') {
     const pages = await page.$$('.page');
     for (let i = 0; i < pages.length; i++) {
       const p = path.join(OUT, `${v.file}_p${i + 1}.png`);

@@ -4,8 +4,7 @@
  *
  *  1. swap the built-in illustrations for real screenshots when they exist
  *  2. place the numbered red markers from data-marker="x,y"
- *  3. draw the QR code into the QR box when a URL was given
- *  4. keep Thai compound words from being split across lines
+ *  3. keep Thai compound words from being split across lines
  */
 (function () {
   // Thai has no spaces between words, so the browser decides where to break.
@@ -16,7 +15,10 @@
     'คิวอาร์โค้ด', 'ไมโครโฟน', 'แอปพลิเคชัน', 'คอมพิวเตอร์', 'อินเทอร์เน็ต', 'เจ้าหน้าที่',
     'หูฟัง', 'ขั้นตอน', 'ติดตั้ง', 'ตรวจสอบ', 'ภาพประกอบ', 'ภาพรวม', 'ผู้เข้าร่วม',
     'ภาษาไทย', 'ภาษาญี่ปุ่น', 'ภาษาอังกฤษ', 'อัตโนมัติ', 'บัญชีผู้ใช้', 'โทรศัพท์มือถือ',
-    'ให้เกียรติ', 'ประชุม', 'สนทนา', 'ก่อนหน้า', 'เชื่อมต่อ', 'ทั้งหมด', 'สมัคร', 'ประโยค'
+    'ให้เกียรติ', 'ประชุม', 'สนทนา', 'ก่อนหน้า', 'เชื่อมต่อ', 'ทั้งหมด', 'สมัคร', 'ประโยค',
+    'เพราะ', 'ของ', 'อีกครั้ง', 'ด้านล่าง', 'ต้นฉบับ', 'คำแปล', 'เสียงแปล', 'ตำแหน่ง', 'ไอคอน',
+    'ระหว่าง', 'ตลอดเวลา', 'ภาษาอื่น', 'สังเกต', 'ตรวจสอบ', 'เลื่อน', 'กล้อง', 'องค์กร',
+    'กรอก', 'มุมขวาบน', 'ระดับเสียง', 'ข้อมูล', 'เฉพาะ', 'ปรากฏ', 'แสดง'
   ];
   var WJ = '⁠';
 
@@ -69,15 +71,6 @@
         el.appendChild(d);
       }
     });
-    if (opts.qrDataUrl) {
-      var slot = document.querySelector('#qr-slot');
-      if (slot) {
-        slot.innerHTML = '';
-        var qimg = document.createElement('img');
-        qimg.src = opts.qrDataUrl;
-        slot.appendChild(qimg);
-      }
-    }
     // every figure replaced by a real screenshot -> the "these are illustrations" note is no longer true
     if (!document.querySelector('.shot svg')) {
       var note = document.querySelector('#illustration-note');
