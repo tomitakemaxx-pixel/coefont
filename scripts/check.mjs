@@ -50,7 +50,15 @@ const page = await browser.newPage({ viewport: { width: 794, height: 1123 } });
 await page.goto(`file://${path.join(ROOT, 'src', 'guide.html')}`);
 await page.evaluate(() => document.fonts.ready);
 await page.addScriptTag({ path: path.join(ROOT, 'src', 'enhance.js') });
-await page.evaluate(() => window.applyGuideEnhancements({}));
+const shots = {};
+for (const f of fs.readdirSync(path.join(ROOT, 'input', 'screenshots'))) {
+  const m = f.match(/^(.+)\.(png|jpg|jpeg)$/i);
+  if (!m) continue;
+  const mime = m[2].toLowerCase() === 'png' ? 'image/png' : 'image/jpeg';
+  shots[m[1]] = `data:${mime};base64,${fs.readFileSync(path.join(ROOT, 'input', 'screenshots', f)).toString('base64')}`;
+}
+await page.evaluate((s) => window.applyGuideEnhancements({ shots: s }), shots);
+await page.waitForTimeout(200);
 
 const dom = await page.evaluate(() => {
   const order = [...document.querySelectorAll('.pair')].map((el) => {

@@ -31,7 +31,7 @@ function loadModule(name, { optional = false } = {}) {
 const { chromium } = loadModule('playwright');
 const VARIANTS = [
   { id: 'staff', file: 'CoeFont_Guide_TH_v2', query: '' },
-  { id: 'internal', file: 'CoeFont_Guide_TH-JA_internal_v2', query: '?variant=internal' },
+  { id: 'internal', file: 'CoeFont_Guide_TH-JA_v2', query: '?variant=internal' },
 ];
 
 const OUT = path.join(ROOT, 'output');

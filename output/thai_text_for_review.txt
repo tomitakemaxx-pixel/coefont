@@ -18,14 +18,14 @@ EN: A PC or smartphone with a browser (Chrome / Safari / Edge).
 JA: PCまたはスマートフォン（ブラウザ：Chrome / Safari / Edge）
 
 [need.2]
-TH: หูฟัง (จำเป็นเมื่อเปิดเสียงแปล) และการเชื่อมต่ออินเทอร์เน็ต
-EN: Earphones (needed if you turn the audio on) and an internet connection.
-JA: イヤホン（音声を使う場合は必須）、インターネット接続
+TH: หูฟัง (จำเป็นเมื่อเปิดเสียงแปล เพื่อป้องกันเสียงย้อนกลับ) และการเชื่อมต่ออินเทอร์เน็ต
+EN: Earphones (required if you turn the audio on, to avoid echo) and an internet connection.
+JA: イヤホン（音声を使う場合は必須。エコー防止）、インターネット接続
 
 [need.3]
-TH: บัญชี Microsoft Teams ขององค์กร ไม่ต้องสมัคร CoeFont และไม่ต้องติดตั้งแอปพลิเคชัน
-EN: A Microsoft Teams work account. No CoeFont account and no app installation are needed.
-JA: 組織のTeamsアカウント（CoeFontの登録・アプリ導入は不要）
+TH: เข้าร่วมประชุม Teams และเห็นแชทของการประชุมได้ ไม่ต้องสมัคร CoeFont และไม่ต้องติดตั้งแอปพลิเคชัน
+EN: Access to the Teams meeting and its chat. No CoeFont account and no app installation are needed.
+JA: Teams会議とその会議チャットを見られること（CoeFontの登録・アプリ導入は不要）
 
 [access.note]
 TH: ลิงก์ รหัสผ่าน และ QR Code จะปรากฏในแชทของการประชุม Teams โดยอัตโนมัติ เมื่อฝ่ายญี่ปุ่นเริ่มการแปล ข้อมูลนี้ใช้ได้เฉพาะการประชุมครั้งนั้น
@@ -33,9 +33,9 @@ EN: The link, the passcode and the QR code appear automatically in the Teams mee
 JA: リンク・パスコード・QRは、通訳開始時にTeamsの会議チャットへ自動投稿されます（その会議限り）。
 
 [step.1]
-TH: เข้าร่วมการประชุม Teams ตามปกติ เสียงสนทนาทั้งหมดใช้ผ่าน Teams
-EN: Join the Teams meeting as usual. All meeting audio goes through Teams.
-JA: Teams会議に、いつもどおり参加します。音声はTeamsを使います。
+TH: เข้าร่วมการประชุม Teams ตามปกติ เสียงต้นฉบับของการประชุมมาจาก Teams
+EN: Join the Teams meeting as usual. The original meeting audio comes from Teams.
+JA: Teams会議に、いつもどおり参加します。会議の原音はTeamsから聞こえます。
 
 [fig.2]
 TH: ข้อความจาก CoeFont ในแชทของการประชุม
@@ -48,9 +48,9 @@ EN: Open the CoeFont message in the meeting chat. PC: press ブラウザで開�
 JA: 会議チャットのCoeFontメッセージを開きます。PCは「ブラウザで開く」、スマートフォンはQRコードを読み取ります。
 
 [step.2b]
-TH: หากข้อความเลื่อนหายไปแล้ว กรุณาแจ้งฝ่ายญี่ปุ่นให้กดปุ่ม チャットに再送 (ส่งซ้ำในแชท)
-EN: If the message has scrolled away, ask the Japanese side to press チャットに再送 (resend to chat).
-JA: メッセージが流れてしまった場合は、日本側が「チャットに再送」を押します。
+TH: หากข้อความเลื่อนหายไปแล้ว ให้กดปุ่ม チャットに再送 (ส่งซ้ำในแชท) หรือแจ้งฝ่ายญี่ปุ่น
+EN: If the message has scrolled away, press チャットに再送 (resend to chat) or ask the Japanese side.
+JA: メッセージが流れた場合は「チャットに再送」を押すか、日本側に依頼します。
 
 [note.ui]
 TH: ภาพหน้าจอในคู่มือนี้เป็นตัวอย่างหน้าจอภาษาญี่ปุ่น ปุ่มบนหน้าจอของคุณอาจแสดงเป็นภาษาอื่น กรุณาสังเกตตำแหน่งและไอคอนของปุ่ม
@@ -68,9 +68,9 @@ EN: Enter the passcode from the message, then press the green 音声をオンに
 JA: パスコードを入力し、緑の「音声をオンにして開始」（イヤホン推奨）または白の「テキストのみで開始」を選びます。
 
 [step.3b]
-TH: สลับระหว่างเสียงกับข้อความได้ตลอดเวลา
-EN: You can switch between audio and text at any time.
-JA: 音声とテキストはいつでも切り替えられます。
+TH: เสียงแปลมาจากหน้าเว็บนี้ ไม่ได้มาจาก Teams จึงต้องใส่หูฟังเพื่อป้องกันเสียงย้อนกลับ สลับเป็นข้อความอย่างเดียวได้ตลอดเวลา
+EN: The interpretation audio comes from this page, not from Teams, so earphones are required to avoid echo. You can switch to text only at any time.
+JA: 通訳音声はこのページから出ます（Teamsからではありません）。エコー防止のためイヤホンが必要です。いつでもテキストのみに切り替えられます。
 
 [fig.4]
 TH: การตั้งค่าภาษาที่มุมขวาบนของหน้า
