@@ -1,0 +1,15 @@
+{
+  "name": "coefont-participant-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CoeFont AI interpreter - participant guide (Thai) build pipeline",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1",
+    "qrcode": "^1.5.4"
+  }
+}

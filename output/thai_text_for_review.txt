@@ -1,0 +1,158 @@
+CoeFont AI Interpreter - Participant Guide (Thai)  v1 / 2026-09
+タイ語レビュー用 対訳リスト
+タイ語は英語原文からの翻訳です。現地スタッフの確認をお願いします。
+（TH = タイ語 / EN = 英語 / JA = 日本語参考）
+==============================================================================
+
+[overview.1]
+TH: ระบบนี้เป็นล่ามแปลภาษาอัตโนมัติด้วย AI คำพูดภาษาญี่ปุ่นจะปรากฏเป็นตัวอักษรภาษาไทยบนหน้าจอของท่าน
+EN: This is an AI interpreter. Japanese speech will appear on your screen as Thai text.
+JA: AI同時通訳です。日本語の発言が、あなたの画面にタイ語の文字で表示されます。
+
+[overview.2]
+TH: คำพูดภาษาไทยของท่านจะปรากฏเป็นตัวอักษรภาษาญี่ปุ่นบนหน้าจอของฝ่ายญี่ปุ่น
+EN: Your Thai speech will appear on the Japanese side’s screen in Japanese.
+JA: あなたのタイ語は、日本側の画面に日本語で表示されます。
+
+[need.1]
+TH: คอมพิวเตอร์หรือโทรศัพท์มือถือที่มีเบราว์เซอร์ (Chrome / Safari / Edge)
+EN: A PC or smartphone with a browser (Chrome / Safari / Edge).
+JA: PCまたはスマートフォン（ブラウザ：Chrome / Safari / Edge）
+
+[need.2]
+TH: หูฟัง และการเชื่อมต่ออินเทอร์เน็ต
+EN: Earphones and an internet connection.
+JA: イヤホン、インターネット接続
+
+[need.3]
+TH: ไม่ต้องสมัครบัญชีผู้ใช้ และไม่ต้องติดตั้งแอปพลิเคชัน
+EN: No account and no app installation are needed.
+JA: アカウント登録・アプリのインストールは不要です。
+
+[access.note]
+TH: เจ้าหน้าที่จะแจ้งลิงก์ รหัสผ่าน และคิวอาร์โค้ด ให้ทราบในวันประชุม
+EN: The staff will provide the link, the passcode and the QR code on the day of the meeting.
+JA: リンク・パスコード・QRは当日ホストが発行します（印刷時は空欄）。
+
+[step.1]
+TH: เข้าร่วมการประชุม Teams ตามปกติ เสียงสนทนาทั้งหมดใช้ผ่าน Teams
+EN: Join the Teams meeting as usual. Audio goes through Teams.
+JA: Teams会議に、いつもどおり参加します。音声はTeamsを使います。
+
+[fig.2]
+TH: ตัวอย่างหน้าจอ: แชทของ Teams (ลิงก์ / รหัสผ่าน / คิวอาร์โค้ด)
+EN: Example: the Teams chat with the link, the passcode and the QR code.
+JA: 図：Teamsチャット（リンク・パスコード・QR）［要確認：実画面に差替］
+
+[step.2]
+TH: เปิดลิงก์ CoeFont ที่ส่งไว้ในช่องแชทของ Teams
+EN: Open the CoeFont link posted in the Teams chat.
+JA: Teamsのチャットに届く「CoeFontのリンク」を開きます。
+
+[step.2b]
+TH: คอมพิวเตอร์: คลิกที่ลิงก์ | โทรศัพท์มือถือ: สแกนคิวอาร์โค้ดด้วยกล้อง หรือแตะที่ลิงก์
+EN: PC: click the link. Smartphone: scan the QR code with your camera, or tap the link.
+JA: PC：リンクをクリック。スマートフォン：カメラでQRコードを読み取る、またはリンクをタップ。
+
+[note.illustration]
+TH: ภาพในคู่มือนี้เป็นภาพประกอบเพื่ออธิบายขั้นตอน หน้าจอจริงอาจแตกต่างเล็กน้อย
+EN: The images in this guide are illustrations of the steps. The actual screen may differ slightly.
+
+[fig.3]
+TH: ตัวอย่างหน้าจอ: การกรอกรหัสผ่าน
+EN: Example: entering the passcode.
+JA: 図：パスコード入力［要確認：実画面のラベル名に差替］
+
+[step.3]
+TH: หากระบบขอรหัสผ่าน กรุณากรอกรหัสผ่านที่ระบุไว้ในแชท
+EN: If a passcode is requested, enter the passcode from the chat.
+JA: パスコードを求められたら、チャットに記載のパスコードを入力します。
+
+[fig.4]
+TH: ตัวอย่างหน้าจอ: การเลือกภาษา
+EN: Example: selecting the language.
+JA: 図：言語選択［要確認：実画面のラベル名に差替］
+
+[step.4]
+TH: เลือกภาษา “ไทย” หากต้องการอ่านเป็นภาษาอังกฤษ กรุณาเลือก “English”
+EN: Select “ไทย (Thai)” as your language. Choose “English” if you prefer English.
+JA: 言語で「ไทย（タイ語）」を選びます。 英語で見たい場合は「English」を選びます。
+
+[fig.5]
+TH: ตัวอย่างหน้าจอ: คำแปลที่แสดงเป็นตัวอักษร
+EN: Example: the translation shown as text.
+JA: 図：訳の表示（日本語→タイ語）［要確認：実画面に差替］
+
+[step.5]
+TH: ระหว่างการประชุม กรุณาพูดตามปกติผ่าน Teams คำแปลจะปรากฏเป็นตัวอักษรบนหน้านี้
+EN: During the meeting, speak normally in Teams. Translations appear as text on this page.
+JA: 会議中は、Teamsで普通に話してください。 訳は、このページに文字で表示されます。
+
+[step.6]
+TH: กรุณาใช้หูฟัง และเปิดหน้านี้ไว้ตลอดการประชุม หากปิดหรือออกจากหน้านี้ ข้อความคำแปลที่แสดงไว้ก่อนหน้าจะหายไป
+EN: Use earphones, and keep this page open during the meeting. If you close or leave the page, the text shown so far disappears.
+JA: イヤホンを使ってください。ページは閉じないでください。 閉じると、それまでの訳が消えます。
+
+[trouble.1]
+TH: โหลดหน้านี้ใหม่ (Reload)
+EN: Reload the page.
+JA: ページを再読み込み（リロード）する
+
+[trouble.2]
+TH: เลือกภาษาอีกครั้ง
+EN: Select the language again.
+JA: 言語を選び直す
+
+[trouble.3]
+TH: ตรวจสอบว่าไมโครโฟนใน Teams เปิดอยู่
+EN: Check that your microphone in Teams is on.
+JA: Teamsのマイクがオンか確認する
+
+[trouble.4]
+TH: หากยังใช้งานไม่ได้ กรุณาแจ้งเจ้าหน้าที่ฝ่ายญี่ปุ่นเป็นภาษาอังกฤษ ตามประโยคด้านล่าง
+EN: If it still does not work, tell the Japanese side in English, using the phrases below.
+JA: それでも直らなければ、英語で知らせてください。
+
+[ph.th.1]
+TH: (ไม่เห็นข้อความภาษาไทย)
+EN: “I can’t see the Thai text.”
+
+[ph.th.2]
+TH: (หน้าเว็บไม่โหลด)
+EN: “The page is not loading.”
+
+[ph.th.3]
+TH: (ต้องกรอกรหัสผ่านใด)
+EN: “Which passcode should I enter?”
+
+[ph.th.4]
+TH: (ได้ยินเสียงหรือไม่)
+EN: “Can you hear me?”
+
+[ph.ja.1]
+TH: (กรุณาโหลดหน้านี้ใหม่)
+EN: “Please reload the page.”
+JA: ページを再読み込みしてください
+
+[ph.ja.2]
+TH: (กรุณาเลือกภาษาไทย)
+EN: “Please select Thai.”
+JA: タイ語を選んでください
+
+[ph.ja.3]
+TH: (กรุณาเปิดไมโครโฟนใน Teams)
+EN: “Please unmute your microphone in Teams.”
+JA: Teamsのマイクをオンにしてください
+
+[ph.ja.4]
+TH: (ขณะนี้เห็นข้อความภาษาไทยหรือไม่)
+EN: “Can you see the Thai text now?”
+JA: タイ語の文字は見えていますか
+
+[ph.ja.5]
+TH: (กรุณาพูดช้าลงเล็กน้อย)
+EN: “Please speak a little slower.”
+JA: 少しゆっくり話してください
+
+==============================================================================
+対訳 31 件

@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "id": "minister",
+      "pdf": "CoeFont_Guide_TH_Minister_v1.pdf",
+      "pngs": [
+        "CoeFont_Guide_TH_Minister_v1_p1.png",
+        "CoeFont_Guide_TH_Minister_v1_p2.png"
+      ],
+      "overflow": [
+        {
+          "id": "p1",
+          "scrollOverflowPx": 0,
+          "freeSpaceAboveFooterPx": 58,
+          "pageHeightPx": 1123
+        },
+        {
+          "id": "p2",
+          "scrollOverflowPx": 0,
+          "freeSpaceAboveFooterPx": 40,
+          "pageHeightPx": 1123
+        }
+      ]
+    },
+    {
+      "id": "internal",
+      "pdf": "CoeFont_Guide_TH-JA_internal_v1.pdf",
+      "pngs": [],
+      "overflow": [
+        {
+          "id": "p1",
+          "scrollOverflowPx": 0,
+          "freeSpaceAboveFooterPx": 19,
+          "pageHeightPx": 1293
+        },
+        {
+          "id": "p2",
+          "scrollOverflowPx": 0,
+          "freeSpaceAboveFooterPx": 19,
+          "pageHeightPx": 1586
+        }
+      ]
+    }
+  ],
+  "screenshots": [],
+  "qr": false
+}

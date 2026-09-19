@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>CoeFont AI Interpreter - Guide for Meeting Participants (TH)</title>
+<style>
+/* ---------- Fonts (embedded, OFL) ---------- */
+@font-face{font-family:'Noto Sans Thai';font-style:normal;font-weight:400;src:url('../assets/fonts/NotoSansThai-Regular.ttf') format('truetype');}
+@font-face{font-family:'Noto Sans Thai';font-style:normal;font-weight:600;src:url('../assets/fonts/NotoSansThai-SemiBold.ttf') format('truetype');}
+@font-face{font-family:'Noto Sans Thai';font-style:normal;font-weight:700;src:url('../assets/fonts/NotoSansThai-Bold.ttf') format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;src:url('../assets/fonts/NotoSans-Regular.ttf') format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:600;src:url('../assets/fonts/NotoSans-SemiBold.ttf') format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:700;src:url('../assets/fonts/NotoSans-Bold.ttf') format('truetype');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:400;src:url('../assets/fonts/NotoSansJP-japanese-400.woff2') format('woff2'),url('../assets/fonts/NotoSansJP-latin-400.woff2') format('woff2');}
+@font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:700;src:url('../assets/fonts/NotoSansJP-japanese-700.woff2') format('woff2'),url('../assets/fonts/NotoSansJP-latin-700.woff2') format('woff2');}
+
+/* ---------- Page ---------- */
+@page{size:A4 portrait;margin:0;}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:#fff;color:#000;}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+.page{position:relative;width:210mm;height:297mm;padding:13mm 15mm 12mm;background:#fff;overflow:hidden;page-break-after:always;}
+.page:last-of-type{page-break-after:auto;}
+
+/* ---------- Type ---------- */
+.th{font-family:'Noto Sans Thai','Noto Sans',sans-serif;font-size:12.2pt;line-height:1.45;color:#000;margin:0;}
+.en{font-family:'Noto Sans',sans-serif;font-size:9.2pt;line-height:1.38;color:#3b3b3b;margin:1.2mm 0 0;}
+.ja{display:none;font-family:'Noto Sans JP','Noto Sans',sans-serif;font-size:9.5pt;line-height:1.5;color:#777;margin:1mm 0 0;}
+body.v-internal .ja{display:block;}
+.small-th{font-size:10.6pt;line-height:1.44;}
+.small-en{font-size:8.1pt;}
+
+/* ---------- Header ---------- */
+.eyebrow{font-family:'Noto Sans',sans-serif;font-size:7.8pt;letter-spacing:.14em;text-transform:uppercase;color:#555;margin:0 0 3mm;}
+h1.th{font-size:16pt;font-weight:700;line-height:1.34;margin:0;}
+.subtitle-th{font-size:11.4pt;color:#111;margin:1.5mm 0 0;}
+.subtitle-en{font-size:9.6pt;color:#3b3b3b;margin:1.2mm 0 0;font-family:'Noto Sans',sans-serif;}
+.rule{border:0;border-top:1.6pt solid #000;margin:4.5mm 0 0;}
+.rule-thin{border:0;border-top:.5pt solid #bbb;margin:4mm 0;}
+
+/* ---------- Section ---------- */
+section{margin-top:2.4mm;}
+h2{margin:0 0 2.5mm;padding:0;}
+h2 .th{font-size:13pt;font-weight:700;display:inline;}
+h2 .en{display:inline;font-size:9.5pt;color:#666;margin-left:2.2mm;}
+h2 .ja{display:none;}
+body.v-internal h2 .ja{display:inline;font-size:9pt;margin-left:2.2mm;}
+.hbar{display:flex;align-items:baseline;gap:2.2mm;border-bottom:.8pt solid #000;padding-bottom:1mm;margin-bottom:1.5mm;}
+.hbar .th{font-size:11pt;font-weight:700;}
+.hbar .en{font-size:9.5pt;color:#555;margin:0;}
+.hbar .ja{font-size:9pt;margin:0;}
+body.v-internal .hbar .ja{display:inline;}
+
+/* ---------- Overview / needs ---------- */
+.box{border:.8pt solid #999;padding:3.2mm 4mm;}
+ul.needs{margin:0;padding-left:0;list-style:none;}
+ul.needs li{position:relative;padding-left:4.6mm;margin-bottom:1.8mm;}
+ul.needs li:last-child{margin-bottom:0;}
+ul.needs li::before{content:"";position:absolute;left:0;top:2.6mm;width:2.2mm;height:2.2mm;background:#000;}
+
+/* ---------- Access details (fill-in) ---------- */
+.access{display:grid;grid-template-columns:1fr 46mm;gap:4mm;}
+.field{margin-bottom:3.4mm;}
+.field:last-child{margin-bottom:0;}
+.field-label{display:flex;align-items:baseline;gap:2mm;margin-bottom:1.2mm;}
+.field-label .th{font-size:10.6pt;font-weight:600;}
+.field-label .en{font-size:8.6pt;color:#555;margin:0;}
+.field-label .ja{font-size:8.4pt;margin:0;}
+body.v-internal .field-label .ja{display:inline;}
+.writein{border:1pt solid #1f4e9c;height:10mm;background:#fff;}
+.qr-slot{border:1pt solid #1f4e9c;width:100%;height:100%;min-height:33mm;display:flex;align-items:center;justify-content:center;text-align:center;}
+.qr-slot .cap{font-family:'Noto Sans Thai','Noto Sans',sans-serif;font-size:10pt;color:#1f4e9c;line-height:1.4;}
+.qr-slot img{width:100%;height:100%;object-fit:contain;padding:2mm;}
+.note-line{margin-top:2.6mm;}
+.note-line .th{font-size:9.2pt;color:#333;}
+.note-line .en{font-size:7.8pt;color:#666;}
+
+/* ---------- Steps ---------- */
+.step{display:grid;grid-template-columns:44mm 1fr;gap:4.2mm;padding:1.5mm 0;border-top:.5pt solid #ccc;align-items:start;}
+.step.first{border-top:.8pt solid #000;}
+.step.nofig{grid-template-columns:1fr;}
+.step-head{display:flex;align-items:center;gap:2.4mm;margin-bottom:1.6mm;}
+.num{flex:0 0 auto;width:7mm;height:7mm;border-radius:50%;background:#c8102e;color:#fff;font-family:'Noto Sans',sans-serif;font-size:11.5pt;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1;}
+.step-label{font-family:'Noto Sans',sans-serif;font-size:9.4pt;letter-spacing:.1em;text-transform:uppercase;color:#666;}
+
+/* ---------- Figure ---------- */
+.figwrap{margin:0;}
+.shot{position:relative;border:.8pt solid #aaa;background:#fff;}
+.shot svg{display:block;width:100%;height:auto;}
+.shot img{display:block;width:100%;height:auto;}
+.shot .tag{position:absolute;top:1.2mm;right:1.2mm;background:#fff;border:.5pt solid #bbb;color:#666;font-family:'Noto Sans Thai','Noto Sans',sans-serif;font-size:7.4pt;padding:.3mm 1.2mm;}
+.shot .marker{position:absolute;width:6.4mm;height:6.4mm;border-radius:50%;background:#c8102e;color:#fff;font-family:'Noto Sans',sans-serif;font-size:10pt;font-weight:700;display:flex;align-items:center;justify-content:center;transform:translate(-50%,-50%);box-shadow:0 0 0 1pt #fff;}
+figcaption{margin-top:1.1mm;}
+figcaption .th{font-size:8.6pt;color:#444;}
+figcaption .en{font-size:7.4pt;line-height:1.25;color:#777;margin-top:.3mm;}
+figcaption .ja{font-size:8pt;margin-top:.6mm;}
+
+/* ---------- Trouble ---------- */
+ol.trouble{margin:0;padding-left:0;list-style:none;counter-reset:t;display:grid;grid-template-columns:1fr 1fr;gap:1mm 6mm;}
+ol.trouble li{position:relative;padding-left:6.4mm;margin-bottom:1mm;counter-increment:t;}
+ol.trouble li:last-child{margin-bottom:0;}
+ol.trouble li::before{content:counter(t);position:absolute;left:0;top:.6mm;width:5.4mm;height:5.4mm;border:1pt solid #000;border-radius:50%;font-family:'Noto Sans',sans-serif;font-size:9.4pt;font-weight:700;display:flex;align-items:center;justify-content:center;}
+
+/* ---------- Phrases ---------- */
+.phrases{display:grid;grid-template-columns:1fr 1fr;gap:5mm;}
+.pcol{border:.8pt solid #999;padding:1.9mm 2.6mm;}
+.pcol h3{margin:0 0 2mm;padding-bottom:1.2mm;border-bottom:.5pt solid #ccc;}
+.pcol h3 .th{font-size:9.6pt;font-weight:700;}
+.pcol h3 .en{font-size:8.6pt;color:#666;margin:0 0 0 2.4mm;}
+.pcol h3 .ja{font-size:8.4pt;margin-top:.6mm;}
+.ph{margin-bottom:.8mm;}
+.ph:last-child{margin-bottom:0;}
+.ph .q{font-family:'Noto Sans',sans-serif;font-size:8.9pt;line-height:1.24;font-weight:600;color:#000;margin:0;}
+.ph .g{font-family:'Noto Sans Thai','Noto Sans',sans-serif;font-size:9.4pt;line-height:1.24;color:#333;margin:.2mm 0 0;}
+.ph .ja{font-size:8.4pt;margin:.4mm 0 0;}
+
+/* ---------- Footer ---------- */
+.footer{position:absolute;left:15mm;right:15mm;bottom:8mm;border-top:.5pt solid #bbb;padding-top:1.8mm;display:flex;justify-content:space-between;align-items:flex-end;font-family:'Noto Sans',sans-serif;font-size:7.6pt;color:#666;}
+.footer .jaf{display:none;}
+body.v-internal .footer .jaf{display:inline;font-family:'Noto Sans JP',sans-serif;}
+.review-note{display:none;}
+body.v-internal .review-note{display:block;margin-top:4mm;border:.8pt dashed #c8102e;padding:2.6mm 3mm;}
+body.v-internal .review-note p{font-family:'Noto Sans JP',sans-serif;font-size:8.6pt;line-height:1.55;color:#c8102e;margin:0;}
+.content{position:relative;}
+body.v-minister figcaption .en{display:none;}
+.tight-note{margin-top:2.6mm;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:6mm;align-items:start;}
+.two-col section{margin-top:2.4mm;}
+/* Internal reference variant (Japanese lines added): flows freely, 2 pages not required */
+body.v-internal .page{height:auto;min-height:0;overflow:visible;padding:0 15mm;page-break-after:auto;}
+body.v-internal #p1{padding-top:13mm;}
+body.v-internal .page + .page{padding-top:6mm;}
+body.v-internal .footer{position:static;margin-top:5mm;left:auto;right:auto;bottom:auto;}
+body.v-internal .th{font-size:11.8pt;line-height:1.42;}
+body.v-internal .en{font-size:8.8pt;}
+body.v-internal .ja{font-size:8.6pt;line-height:1.45;}
+body.v-internal .small-th{font-size:10pt;}
+body.v-internal .step{grid-template-columns:38mm 1fr;}
+body.v-internal .step.nofig{grid-template-columns:1fr;}
+.step,.pcol,.box,ul.needs li,ol.trouble li,.field{break-inside:avoid;}
+</style>
+</head>
+<body class="v-minister">
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page" id="p1">
+  <p class="eyebrow">Nippon Steel Trading Corporation</p>
+  <h1 class="th">คู่มือการใช้งานระบบล่ามแปลภาษาด้วย AI &ldquo;CoeFont&rdquo;</h1>
+  <p class="th subtitle-th">สำหรับผู้เข้าร่วมการประชุมออนไลน์ผ่าน Microsoft Teams</p>
+  <p class="subtitle-en">CoeFont AI Interpreter &mdash; Guide for Meeting Participants (Microsoft Teams)</p>
+  <p class="ja">CoeFont通訳 参加ガイド（Teams会議用）／タイ語版</p>
+  <hr class="rule">
+
+  <div class="two-col">
+    <section>
+    <div class="hbar"><span class="th">ภาพรวมของระบบ</span><span class="en">Overview</span><span class="ja">この仕組み</span></div>
+    <div class="box">
+      <div class="pair" data-key="overview.1">
+        <p class="th">ระบบนี้เป็นล่ามแปลภาษาอัตโนมัติด้วย AI คำพูดภาษาญี่ปุ่นจะปรากฏเป็นตัวอักษรภาษาไทยบนหน้าจอของท่าน</p>
+        <p class="en">This is an AI interpreter. Japanese speech will appear on your screen as Thai text.</p>
+        <p class="ja">AI同時通訳です。日本語の発言が、あなたの画面にタイ語の文字で表示されます。</p>
+      </div>
+      <div class="pair" data-key="overview.2" style="margin-top:2.4mm">
+        <p class="th">คำพูดภาษาไทยของท่านจะปรากฏเป็นตัวอักษรภาษาญี่ปุ่นบนหน้าจอของฝ่ายญี่ปุ่น</p>
+        <p class="en">Your Thai speech will appear on the Japanese side&rsquo;s screen in Japanese.</p>
+        <p class="ja">あなたのタイ語は、日本側の画面に日本語で表示されます。</p>
+      </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="hbar"><span class="th">สิ่งที่ต้องเตรียม</span><span class="en">What you need</span><span class="ja">必要なもの</span></div>
+    <ul class="needs">
+      <li class="pair" data-key="need.1">
+        <p class="th small-th">คอมพิวเตอร์หรือโทรศัพท์มือถือที่มีเบราว์เซอร์ (Chrome / Safari / Edge)</p>
+        <p class="en small-en">A PC or smartphone with a browser (Chrome / Safari / Edge).</p>
+        <p class="ja">PCまたはスマートフォン（ブラウザ：Chrome / Safari / Edge）</p>
+      </li>
+      <li class="pair" data-key="need.2">
+        <p class="th small-th">หูฟัง และการเชื่อมต่ออินเทอร์เน็ต</p>
+        <p class="en small-en">Earphones and an internet connection.</p>
+        <p class="ja">イヤホン、インターネット接続</p>
+      </li>
+      <li class="pair" data-key="need.3">
+        <p class="th small-th">ไม่ต้องสมัครบัญชีผู้ใช้ และไม่ต้องติดตั้งแอปพลิเคชัน</p>
+        <p class="en small-en">No account and no app installation are needed.</p>
+        <p class="ja">アカウント登録・アプリのインストールは不要です。</p>
+      </li>
+    </ul>
+    </section>
+  </div>
+
+  <section>
+    <div class="hbar"><span class="th">ข้อมูลสำหรับการเข้าร่วม</span><span class="en">Access details</span><span class="ja">記入枠</span></div>
+    <div class="access">
+      <div>
+        <div class="field">
+          <div class="field-label"><span class="th">ลิงก์ CoeFont</span><span class="en">CoeFont link</span><span class="ja">CoeFontのリンク</span></div>
+          <div class="writein"></div>
+        </div>
+        <div class="field">
+          <div class="field-label"><span class="th">รหัสผ่าน</span><span class="en">Passcode</span><span class="ja">パスコード</span></div>
+          <div class="writein"></div>
+        </div>
+      </div>
+      <div class="qr-slot" id="qr-slot" data-qr="">
+        <span class="cap">QR Code</span>
+      </div>
+    </div>
+    <div class="note-line pair" data-key="access.note">
+      <p class="th">เจ้าหน้าที่จะแจ้งลิงก์ รหัสผ่าน และคิวอาร์โค้ด ให้ทราบในวันประชุม</p>
+      <p class="en">The staff will provide the link, the passcode and the QR code on the day of the meeting.</p>
+      <p class="ja">リンク・パスコード・QRは当日ホストが発行します（印刷時は空欄）。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hbar"><span class="th">ขั้นตอนการใช้งาน</span><span class="en">Steps</span><span class="ja">手順</span></div>
+
+    <div class="step nofig first">
+      <div>
+        <div class="step-head"><span class="num">1</span><span class="step-label">Step 1</span></div>
+        <div class="pair" data-key="step.1">
+          <p class="th">เข้าร่วมการประชุม Teams ตามปกติ เสียงสนทนาทั้งหมดใช้ผ่าน Teams</p>
+          <p class="en">Join the Teams meeting as usual. Audio goes through Teams.</p>
+          <p class="ja">Teams会議に、いつもどおり参加します。音声はTeamsを使います。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <figure class="figwrap">
+        <div class="shot" data-shot="pc_01_link" data-marker="52,47">
+          <span class="tag">ภาพประกอบ</span>
+          <svg viewBox="0 0 420 260" role="img" aria-label="Teams chat with link, passcode and QR illustration">
+            <rect x="0" y="0" width="420" height="260" fill="#fff"/>
+            <rect x="0" y="0" width="420" height="26" fill="#ededed"/>
+            <circle cx="14" cy="13" r="4" fill="#bbb"/><circle cx="28" cy="13" r="4" fill="#bbb"/><circle cx="42" cy="13" r="4" fill="#bbb"/>
+            <rect x="60" y="7" width="150" height="12" rx="3" fill="#dcdcdc"/>
+            <rect x="14" y="40" width="392" height="200" rx="4" fill="#fafafa" stroke="#e0e0e0"/>
+            <circle cx="36" cy="62" r="11" fill="#dcdcdc"/>
+            <rect x="54" y="52" width="80" height="8" rx="3" fill="#d2d2d2"/>
+            <rect x="54" y="70" width="330" height="86" rx="5" fill="#fff" stroke="#c9c9c9"/>
+            <rect x="64" y="80" width="66" height="8" rx="3" fill="#e2e2e2"/>
+            <rect x="64" y="98" width="196" height="10" rx="2" fill="#efefef" stroke="#c9c9c9"/>
+            <line x1="66" y1="110" x2="258" y2="110" stroke="#555" stroke-width="1.6"/>
+            <rect x="64" y="122" width="104" height="9" rx="2" fill="#ececec"/>
+            <rect x="64" y="136" width="72" height="9" rx="2" fill="#ececec"/>
+            <rect x="278" y="80" width="64" height="64" fill="#fff" stroke="#9a9a9a"/>
+            <g fill="#8d8d8d">
+              <rect x="284" y="86" width="16" height="16"/><rect x="320" y="86" width="16" height="16"/><rect x="284" y="122" width="16" height="16"/>
+              <rect x="306" y="106" width="6" height="6"/><rect x="316" y="112" width="6" height="6"/><rect x="326" y="106" width="6" height="6"/>
+              <rect x="306" y="124" width="6" height="6"/><rect x="318" y="130" width="6" height="6"/><rect x="330" y="124" width="6" height="6"/>
+            </g>
+            <rect x="54" y="170" width="330" height="26" rx="13" fill="#f2f2f2" stroke="#d8d8d8"/>
+            <rect x="66" y="180" width="120" height="7" rx="3" fill="#dcdcdc"/>
+          </svg>
+        </div>
+        <figcaption class="pair" data-key="fig.2">
+          <p class="th">ตัวอย่างหน้าจอ: แชทของ Teams (ลิงก์ / รหัสผ่าน / คิวอาร์โค้ด)</p>
+          <p class="en">Example: the Teams chat with the link, the passcode and the QR code.</p>
+          <p class="ja">図：Teamsチャット（リンク・パスコード・QR）［要確認：実画面に差替］</p>
+        </figcaption>
+      </figure>
+      <div>
+        <div class="step-head"><span class="num">2</span><span class="step-label">Step 2</span></div>
+        <div class="pair" data-key="step.2">
+          <p class="th">เปิดลิงก์ CoeFont ที่ส่งไว้ในช่องแชทของ Teams</p>
+          <p class="en">Open the CoeFont link posted in the Teams chat.</p>
+          <p class="ja">Teamsのチャットに届く「CoeFontのリンク」を開きます。</p>
+        </div>
+        <div class="pair" data-key="step.2b" style="margin-top:2.2mm">
+          <p class="th">คอมพิวเตอร์: คลิกที่ลิงก์ &nbsp;|&nbsp; โทรศัพท์มือถือ: สแกนคิวอาร์โค้ดด้วยกล้อง หรือแตะที่ลิงก์</p>
+          <p class="en">PC: click the link. Smartphone: scan the QR code with your camera, or tap the link.</p>
+          <p class="ja">PC：リンクをクリック。スマートフォン：カメラでQRコードを読み取る、またはリンクをタップ。</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tight-note">
+    <div class="note-line pair" data-key="note.illustration" >
+      <p class="th">ภาพในคู่มือนี้เป็นภาพประกอบเพื่ออธิบายขั้นตอน หน้าจอจริงอาจแตกต่างเล็กน้อย</p>
+      <p class="en">The images in this guide are illustrations of the steps. The actual screen may differ slightly.</p>
+    </div>
+      </section>
+  <div class="footer">
+    <span>For internal use &ndash; Nippon Steel Trading Corporation<span class="jaf">／社内利用限定</span></span>
+    <span>v1 &middot; 2026-09 &nbsp;&nbsp; 1 / 2</span>
+  </div>
+</div>
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page" id="p2">
+  <section style="margin-top:0">
+    <div class="hbar"><span class="th">ขั้นตอนการใช้งาน (ต่อ)</span><span class="en">Steps (continued)</span><span class="ja">手順（続き）</span></div>
+
+    <div class="step first">
+      <figure class="figwrap">
+        <div class="shot" data-shot="pc_02_passcode" data-marker="50,55">
+          <span class="tag">ภาพประกอบ</span>
+          <svg viewBox="0 0 420 212" role="img" aria-label="Passcode entry screen illustration">
+            <rect x="0" y="0" width="420" height="260" fill="#fff"/>
+            <rect x="0" y="0" width="420" height="26" fill="#ededed"/>
+            <circle cx="14" cy="13" r="4" fill="#bbb"/><circle cx="28" cy="13" r="4" fill="#bbb"/><circle cx="42" cy="13" r="4" fill="#bbb"/>
+            <rect x="60" y="7" width="180" height="12" rx="3" fill="#dcdcdc"/>
+            <rect x="90" y="66" width="240" height="128" rx="6" fill="#fff" stroke="#c4c4c4"/>
+            <rect x="114" y="86" width="86" height="9" rx="3" fill="#e0e0e0"/>
+            <text x="114" y="122" font-family="'Noto Sans',sans-serif" font-size="12" fill="#4a4a4a">Passcode</text>
+            <rect x="114" y="130" width="192" height="28" rx="4" fill="#fff" stroke="#8f8f8f" stroke-width="1.4"/>
+            <g fill="#8d8d8d"><circle cx="130" cy="144" r="3.6"/><circle cx="144" cy="144" r="3.6"/><circle cx="158" cy="144" r="3.6"/><circle cx="172" cy="144" r="3.6"/></g>
+            <rect x="114" y="166" width="192" height="20" rx="10" fill="#4a4a4a"/>
+            <path d="M200 176h20m-6-6 6 6-6 6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <figcaption class="pair" data-key="fig.3">
+          <p class="th">ตัวอย่างหน้าจอ: การกรอกรหัสผ่าน</p>
+          <p class="en">Example: entering the passcode.</p>
+          <p class="ja">図：パスコード入力［要確認：実画面のラベル名に差替］</p>
+        </figcaption>
+      </figure>
+      <div>
+        <div class="step-head"><span class="num">3</span><span class="step-label">Step 3</span></div>
+        <div class="pair" data-key="step.3">
+          <p class="th">หากระบบขอรหัสผ่าน กรุณากรอกรหัสผ่านที่ระบุไว้ในแชท</p>
+          <p class="en">If a passcode is requested, enter the passcode from the chat.</p>
+          <p class="ja">パスコードを求められたら、チャットに記載のパスコードを入力します。</p>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <figure class="figwrap">
+        <div class="shot" data-shot="pc_03_language" data-marker="50,48">
+          <span class="tag">ภาพประกอบ</span>
+          <svg viewBox="0 0 420 230" role="img" aria-label="Language selection screen illustration">
+            <rect x="0" y="0" width="420" height="260" fill="#fff"/>
+            <rect x="0" y="0" width="420" height="26" fill="#ededed"/>
+            <circle cx="14" cy="13" r="4" fill="#bbb"/><circle cx="28" cy="13" r="4" fill="#bbb"/><circle cx="42" cy="13" r="4" fill="#bbb"/>
+            <rect x="60" y="7" width="180" height="12" rx="3" fill="#dcdcdc"/>
+            <rect x="86" y="50" width="248" height="166" rx="6" fill="#fff" stroke="#c4c4c4"/>
+            <rect x="106" y="66" width="96" height="9" rx="3" fill="#e0e0e0"/>
+            <rect x="106" y="92" width="208" height="32" rx="4" fill="#fff" stroke="#3a3a3a" stroke-width="1.8"/>
+            <text x="120" y="113" font-family="'Noto Sans Thai',sans-serif" font-size="14" fill="#000">ไทย</text>
+            <path d="M286 108l5 5 9-11" stroke="#3a3a3a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="106" y="132" width="208" height="30" rx="4" fill="#fafafa" stroke="#d8d8d8"/>
+            <text x="120" y="152" font-family="'Noto Sans',sans-serif" font-size="12.5" fill="#6a6a6a">English</text>
+            <rect x="106" y="170" width="208" height="30" rx="4" fill="#fafafa" stroke="#d8d8d8"/>
+            <text x="120" y="190" font-family="'Noto Sans JP',sans-serif" font-size="12.5" fill="#6a6a6a">日本語</text>
+          </svg>
+        </div>
+        <figcaption class="pair" data-key="fig.4">
+          <p class="th">ตัวอย่างหน้าจอ: การเลือกภาษา</p>
+          <p class="en">Example: selecting the language.</p>
+          <p class="ja">図：言語選択［要確認：実画面のラベル名に差替］</p>
+        </figcaption>
+      </figure>
+      <div>
+        <div class="step-head"><span class="num">4</span><span class="step-label">Step 4</span></div>
+        <div class="pair" data-key="step.4">
+          <p class="th">เลือกภาษา &ldquo;ไทย&rdquo; หากต้องการอ่านเป็นภาษาอังกฤษ กรุณาเลือก &ldquo;English&rdquo;</p>
+          <p class="en">Select &ldquo;ไทย (Thai)&rdquo; as your language. Choose &ldquo;English&rdquo; if you prefer English.</p>
+          <p class="ja">言語で「ไทย（タイ語）」を選びます。 英語で見たい場合は「English」を選びます。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <figure class="figwrap">
+        <div class="shot" data-shot="pc_04_translating" data-marker="50,62">
+          <span class="tag">ภาพประกอบ</span>
+          <svg viewBox="0 0 420 238" role="img" aria-label="Translation display screen illustration">
+            <rect x="0" y="0" width="420" height="260" fill="#fff"/>
+            <rect x="0" y="0" width="420" height="26" fill="#ededed"/>
+            <circle cx="14" cy="13" r="4" fill="#bbb"/><circle cx="28" cy="13" r="4" fill="#bbb"/><circle cx="42" cy="13" r="4" fill="#bbb"/>
+            <rect x="60" y="7" width="180" height="12" rx="3" fill="#dcdcdc"/>
+            <rect x="14" y="40" width="392" height="26" rx="4" fill="#f4f4f4" stroke="#e0e0e0"/>
+            <rect x="26" y="49" width="60" height="8" rx="3" fill="#d6d6d6"/>
+            <rect x="330" y="47" width="64" height="12" rx="6" fill="#e4e4e4"/>
+            <rect x="14" y="76" width="392" height="152" rx="4" fill="#fff" stroke="#d8d8d8"/>
+            <text x="30" y="102" font-family="'Noto Sans JP',sans-serif" font-size="10.5" fill="#9a9a9a">本日はお集まりいただき、ありがとうございます。</text>
+            <text x="30" y="132" font-family="'Noto Sans Thai',sans-serif" font-size="13" fill="#000">ขอขอบคุณที่ท่านให้เกียรติมาร่วม</text>
+            <text x="30" y="154" font-family="'Noto Sans Thai',sans-serif" font-size="13" fill="#000">การประชุมในวันนี้</text>
+            <line x1="30" y1="172" x2="390" y2="172" stroke="#ececec"/>
+            <text x="30" y="192" font-family="'Noto Sans JP',sans-serif" font-size="10.5" fill="#9a9a9a">まず、事業の概要をご説明します。</text>
+            <text x="30" y="216" font-family="'Noto Sans Thai',sans-serif" font-size="13" fill="#000">ก่อนอื่น ขออธิบายภาพรวมของธุรกิจ</text>
+          </svg>
+        </div>
+        <figcaption class="pair" data-key="fig.5">
+          <p class="th">ตัวอย่างหน้าจอ: คำแปลที่แสดงเป็นตัวอักษร</p>
+          <p class="en">Example: the translation shown as text.</p>
+          <p class="ja">図：訳の表示（日本語→タイ語）［要確認：実画面に差替］</p>
+        </figcaption>
+      </figure>
+      <div>
+        <div class="step-head"><span class="num">5</span><span class="step-label">Step 5</span></div>
+        <div class="pair" data-key="step.5">
+          <p class="th">ระหว่างการประชุม กรุณาพูดตามปกติผ่าน Teams คำแปลจะปรากฏเป็นตัวอักษรบนหน้านี้</p>
+          <p class="en">During the meeting, speak normally in Teams. Translations appear as text on this page.</p>
+          <p class="ja">会議中は、Teamsで普通に話してください。 訳は、このページに文字で表示されます。</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="step nofig">
+      <div>
+        <div class="step-head"><span class="num">6</span><span class="step-label">Step 6</span></div>
+        <div class="pair" data-key="step.6">
+          <p class="th">กรุณาใช้หูฟัง และเปิดหน้านี้ไว้ตลอดการประชุม หากปิดหรือออกจากหน้านี้ ข้อความคำแปลที่แสดงไว้ก่อนหน้าจะหายไป</p>
+          <p class="en">Use earphones, and keep this page open during the meeting. If you close or leave the page, the text shown so far disappears.</p>
+          <p class="ja">イヤホンを使ってください。ページは閉じないでください。 閉じると、それまでの訳が消えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="hbar"><span class="th">หากพบปัญหา</span><span class="en">If something does not work</span><span class="ja">困ったとき</span></div>
+    <ol class="trouble">
+      <li class="pair" data-key="trouble.1">
+        <p class="th small-th">โหลดหน้านี้ใหม่ (Reload)</p>
+        <p class="en small-en">Reload the page.</p>
+        <p class="ja">ページを再読み込み（リロード）する</p>
+      </li>
+      <li class="pair" data-key="trouble.2">
+        <p class="th small-th">เลือกภาษาอีกครั้ง</p>
+        <p class="en small-en">Select the language again.</p>
+        <p class="ja">言語を選び直す</p>
+      </li>
+      <li class="pair" data-key="trouble.3">
+        <p class="th small-th">ตรวจสอบว่าไมโครโฟนใน Teams เปิดอยู่</p>
+        <p class="en small-en">Check that your microphone in Teams is on.</p>
+        <p class="ja">Teamsのマイクがオンか確認する</p>
+      </li>
+      <li class="pair" data-key="trouble.4">
+        <p class="th small-th">หากยังใช้งานไม่ได้ กรุณาแจ้งเจ้าหน้าที่ฝ่ายญี่ปุ่นเป็นภาษาอังกฤษ ตามประโยคด้านล่าง</p>
+        <p class="en small-en">If it still does not work, tell the Japanese side in English, using the phrases below.</p>
+        <p class="ja">それでも直らなければ、英語で知らせてください。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="hbar"><span class="th">ประโยคภาษาอังกฤษที่ใช้บ่อย</span><span class="en">Useful English phrases</span><span class="ja">英語の定型フレーズ</span></div>
+    <div class="phrases">
+      <div class="pcol">
+        <h3><span class="th">ประโยคที่ท่านใช้แจ้งฝ่ายญี่ปุ่น</span><span class="en">From the Thai side</span><span class="ja">タイ側から</span></h3>
+        <div class="ph pair" data-key="ph.th.1"><p class="q">&ldquo;I can&rsquo;t see the Thai text.&rdquo;</p><p class="g">(ไม่เห็นข้อความภาษาไทย)</p></div>
+        <div class="ph pair" data-key="ph.th.2"><p class="q">&ldquo;The page is not loading.&rdquo;</p><p class="g">(หน้าเว็บไม่โหลด)</p></div>
+        <div class="ph pair" data-key="ph.th.3"><p class="q">&ldquo;Which passcode should I enter?&rdquo;</p><p class="g">(ต้องกรอกรหัสผ่านใด)</p></div>
+        <div class="ph pair" data-key="ph.th.4"><p class="q">&ldquo;Can you hear me?&rdquo;</p><p class="g">(ได้ยินเสียงหรือไม่)</p></div>
+      </div>
+      <div class="pcol">
+        <h3><span class="th">ประโยคที่ฝ่ายญี่ปุ่นจะใช้กับท่าน</span><span class="en">From the Japanese side</span><span class="ja">日本側から</span></h3>
+        <div class="ph pair" data-key="ph.ja.1"><p class="q">&ldquo;Please reload the page.&rdquo;</p><p class="g">(กรุณาโหลดหน้านี้ใหม่)</p><p class="ja">ページを再読み込みしてください</p></div>
+        <div class="ph pair" data-key="ph.ja.2"><p class="q">&ldquo;Please select Thai.&rdquo;</p><p class="g">(กรุณาเลือกภาษาไทย)</p><p class="ja">タイ語を選んでください</p></div>
+        <div class="ph pair" data-key="ph.ja.3"><p class="q">&ldquo;Please unmute your microphone in Teams.&rdquo;</p><p class="g">(กรุณาเปิดไมโครโฟนใน Teams)</p><p class="ja">Teamsのマイクをオンにしてください</p></div>
+        <div class="ph pair" data-key="ph.ja.4"><p class="q">&ldquo;Can you see the Thai text now?&rdquo;</p><p class="g">(ขณะนี้เห็นข้อความภาษาไทยหรือไม่)</p><p class="ja">タイ語の文字は見えていますか</p></div>
+        <div class="ph pair" data-key="ph.ja.5"><p class="q">&ldquo;Please speak a little slower.&rdquo;</p><p class="g">(กรุณาพูดช้าลงเล็กน้อย)</p><p class="ja">少しゆっくり話してください</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="review-note">
+      <p>［社内メモ・配布前に削除／タイ語は要確認］タイ語は英語原文からの機械翻訳です。現地スタッフによる確認後に確定してください（対訳は output/thai_text_for_review.txt）。図は説明用イメージのため、実画面のスクリーンショットを input/screenshots/ に置いて再生成してください。</p>
+    </div>
+  </section>
+  <div class="footer">
+    <span>For internal use &ndash; Nippon Steel Trading Corporation<span class="jaf">／社内利用限定</span></span>
+    <span>v1 &middot; 2026-09 &nbsp;&nbsp; 2 / 2</span>
+  </div>
+</div>
+
+<script>
+(function(){
+  var p = new URLSearchParams(location.search);
+  if (p.get('variant') === 'internal') document.body.className = 'v-internal';
+})();
+</script>
+</body>
+</html>
