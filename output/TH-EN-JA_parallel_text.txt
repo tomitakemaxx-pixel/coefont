@@ -1,0 +1,244 @@
+CoeFont Interpreter – Participant Guide (Thai)
+対訳一覧（TH = タイ語 / EN = 英語 / JA = 日本語）
+========================================================================
+
+[title]
+TH: คู่มือการใช้งาน CoeFont Interpreter
+EN: AI interpreter — guide for participants in Microsoft Teams meetings
+JA: CoeFont通訳 参加者ガイド
+
+[subtitle]
+TH: ล่ามแปลภาษาด้วย AI สำหรับผู้เข้าร่วมการประชุม Microsoft Teams
+EN: AI interpreter — guide for participants in Microsoft Teams meetings
+JA: AI同時通訳（Teams会議の参加者向け）
+
+[intro.1]
+TH: ระบบนี้เป็นล่ามแปลภาษาอัตโนมัติด้วย AI คำพูดภาษาญี่ปุ่นจะแสดงเป็นข้อความภาษาไทยบนหน้าจอของคุณ และเลือกฟังเป็นเสียงได้
+EN: This is an AI interpreter. Japanese speech is shown on your screen as Thai text, and you can also listen to it as audio.
+JA: AI同時通訳です。日本語の発言がタイ語の文字で表示され、音声で聞くこともできます。
+
+[intro.2]
+TH: คำพูดภาษาไทยของคุณจะถูกแปลเป็นภาษาญี่ปุ่นให้ฝ่ายญี่ปุ่นโดยอัตโนมัติ
+EN: Your Thai speech is translated into Japanese for the Japanese side automatically.
+JA: あなたのタイ語は、日本側に向けて自動で日本語に訳されます。
+
+[need.1]
+TH: คอมพิวเตอร์ หรือโทรศัพท์มือถือที่มีเบราว์เซอร์ (Chrome / Safari / Edge)
+EN: A PC or a smartphone with a browser (Chrome / Safari / Edge)
+JA: PCまたはスマートフォン（ブラウザ：Chrome / Safari / Edge）
+
+[need.2]
+TH: หูฟัง (จำเป็นเมื่อฟังเสียงแปล เพื่อป้องกันเสียงสะท้อน) และการเชื่อมต่ออินเทอร์เน็ต
+EN: Earphones (required when you listen to the audio, to prevent echo) and an internet connection
+JA: イヤホン（音声を聞く場合は必須。エコー防止）、インターネット接続
+
+[need.3]
+TH: สามารถเข้าร่วมการประชุม Teams และดูแชทของการประชุมได้ ไม่ต้องสมัครบัญชี CoeFont และไม่ต้องติดตั้งแอปพลิเคชัน
+EN: Access to the Teams meeting and its chat. No CoeFont account and no app installation are needed.
+JA: Teams会議とその会議チャットを見られること（CoeFontの登録・アプリ導入は不要）
+
+[note.1]
+TH: ลิงก์ รหัสผ่าน และ QR Code จะแสดงในแชทของการประชุม Teams โดยอัตโนมัติเมื่อฝ่ายญี่ปุ่นเริ่มการแปล กรุณาใช้ข้อมูลจากแชทของการประชุมที่กำลังเข้าร่วมเสมอ
+EN: The link, the passcode and the QR code are posted automatically in the Teams meeting chat when the Japanese side starts the interpretation. Always use the ones in the chat of the meeting you are attending.
+JA: リンク・パスコード・QRは、日本側が通訳を開始すると会議チャットに自動投稿されます。必ず参加中の会議のチャットにあるものを使ってください。
+
+[step.1]
+TH: เข้าร่วมการประชุม Teams ตามปกติ คุณจะได้ยินเสียงต้นฉบับของการประชุมผ่าน Teams
+EN: Join the Teams meeting as usual. You hear the original meeting audio through Teams.
+JA: Teams会議にいつもどおり参加します。会議の原音はTeamsで聞こえます。
+
+[step.2]
+TH: เปิดข้อความจาก CoeFont ในแชทของการประชุม แล้วกดปุ่ม 「ブラウザで開く」 (เปิดในเบราว์เซอร์)
+EN: Open the CoeFont message in the meeting chat and press 「ブラウザで開く」 (Open in browser).
+JA: 会議チャットのCoeFontメッセージで「ブラウザで開く」を押します。
+
+[step.2b]
+TH: หากหาข้อความไม่พบ กรุณาแจ้งฝ่ายญี่ปุ่นให้กดปุ่ม 「チャットに再送」 (ส่งซ้ำในแชท)
+EN: If you cannot find the message, ask the Japanese side to press 「チャットに再送」 (Resend to chat).
+JA: メッセージが見つからない場合は、日本側に「チャットに再送」を押してもらいます。
+
+[fig.2]
+TH: ข้อความจาก CoeFont ในแชทของการประชุม
+JA: 会議チャットのCoeFontメッセージ
+
+[step.3]
+TH: กรอกรหัสผ่านที่แสดงในข้อความ แล้วกดปุ่ม 「เริ่มพร้อมเสียง」 หรือ 「เริ่มด้วยข้อความเท่านั้น」
+EN: Enter the passcode shown in the message, then press 「Continue With Audio」 or 「Continue With Text Only」.
+JA: パスコードを入力し、「音声をオンにして開始」または「テキストのみで開始」を押します。
+
+[step.3b]
+TH: เสียงแปลจะออกจากหน้าเว็บนี้ ไม่ใช่จาก Teams จึงต้องใช้หูฟังเพื่อป้องกันเสียงสะท้อน
+EN: The interpretation audio plays from this web page, not from Teams, so use earphones to prevent echo.
+JA: 通訳音声はこのページから出ます（Teamsではありません）。エコー防止のためイヤホンを使ってください。
+
+[step.3c]
+TH: หน้าเว็บของ CoeFont จะแสดงเป็นภาษาตามการตั้งค่าของเครื่อง (เช่น ภาษาไทยหรือภาษาอังกฤษ) ภาพในคู่มือนี้เป็นหน้าจอภาษาญี่ปุ่น
+EN: The CoeFont web page is shown in your device language (for example Thai or English). The screenshots in this guide show the Japanese version.
+JA: 参加者ページは端末の言語設定に合わせて表示されます（本書の画面は日本語表示の例）。
+
+[fig.3]
+TH: ช่องรหัสผ่านและปุ่มเริ่ม
+JA: パスコード入力と開始ボタン
+
+[step.4]
+TH: ที่มุมขวาบนของหน้า ให้เลือกภาษา 「ไทย」 (Thai) หากต้องการอ่านเป็นภาษาอังกฤษ ให้เลือก 「English」
+EN: At the top right of the page, select 「Thai」. Choose 「English」 if you prefer English.
+JA: 画面右上の言語設定でタイ語を選びます（英語で読む場合は English）。
+
+[step.4b]
+TH: ไอคอนรูปหูฟังข้าง ๆ ใช้เปิดหรือปิดเสียงแปล
+EN: The headphone icon next to it turns the interpretation audio on or off.
+JA: 隣のイヤホンアイコンで、通訳音声のオン・オフを切り替えます。
+
+[fig.4]
+TH: การตั้งค่าภาษาที่มุมขวาบน
+JA: 画面右上の言語設定
+
+[step.5]
+TH: คำแปลจะแสดงเป็นข้อความ ด้านซ้ายคือต้นฉบับ ด้านขวาคือคำแปล
+EN: The translation is shown as text: the original on the left, the translation on the right.
+JA: 訳が文字で表示されます（左が原文、右が訳）。
+
+[step.5b]
+TH: กรุณาอย่าปิดหรือโหลดหน้านี้ใหม่ระหว่างการประชุม เพราะข้อความที่แสดงไว้จะหายไปทั้งหมด
+EN: Do not close or reload the page during the meeting. Everything shown so far will be cleared.
+JA: 会議中はページを閉じたり再読み込みしたりしないでください。表示内容がすべて消えます。
+
+[fig.5]
+TH: หน้าจอแสดงคำแปล
+JA: 訳の表示画面
+
+[smartphone.1]
+TH: กรณีเข้าร่วม Teams ด้วยคอมพิวเตอร์: สแกน QR Code ในข้อความของ CoeFont (ภาพในขั้นตอนที่ 2) ด้วยกล้องของโทรศัพท์
+EN: If you join Teams on a PC: scan the QR code in the CoeFont message (picture in Step 2) with your phone camera.
+JA: TeamsにPCで参加する場合：CoeFontメッセージのQRコード（手順2の図）をスマートフォンのカメラで読み取ります。
+
+[smartphone.2]
+TH: กรณีเข้าร่วม Teams ด้วยโทรศัพท์เครื่องเดียวกัน: แตะลิงก์หรือปุ่ม 「ブラウザで開く」 ในข้อความของ CoeFont
+EN: If you join Teams on the same phone: tap the link or 「ブラウザで開く」 in the CoeFont message.
+JA: Teamsも同じスマートフォンで参加する場合：CoeFontメッセージのリンクか「ブラウザで開く」をタップします。
+
+[smartphone.3]
+TH: จากนั้นทำตามขั้นตอนที่ 3 ถึง 5 เหมือนกับคอมพิวเตอร์ หากฟังเสียงแปล ให้ต่อหูฟังกับโทรศัพท์
+EN: Then follow Steps 3 to 5, the same as on a PC. If you listen to the audio, connect your earphones to the phone.
+JA: その後は手順3〜5と同じです。音声を聞く場合は、イヤホンをスマートフォンにつなぎます。
+
+[smartphone.4]
+TH: หากตัวอักษรเล็กเกินไป ให้กดปุ่ม 「A+」 เพื่อขยาย กรุณาเปิดหน้าเว็บค้างไว้ตลอดการประชุม
+EN: If the text is too small, press 「A+」 to enlarge it, and keep the page open during the meeting.
+JA: 文字が小さい場合は「A+」で拡大できます。会議中はページを開いたままにしてください。
+
+[trouble.1.problem]
+TH: หน้าเว็บแสดง 「ไม่พบการประชุม กรุณาตรวจสอบ URL」
+EN: 「Meeting not found. Please check the URL.」
+JA: 「ミーティングが見つかりませんでした」と表示
+
+[trouble.1.action]
+TH: เปิดลิงก์ล่าสุดจากแชทของการประชุมอีกครั้ง
+EN: Open the latest link in the meeting chat again.
+JA: 会議チャットの最新のリンクを開き直す
+
+[trouble.2.problem]
+TH: หน้าเว็บแสดง 「เชื่อมต่อไม่สำเร็จ」
+EN: 「Connection failed」
+JA: 「接続に失敗しました」と表示
+
+[trouble.2.action]
+TH: รอสักครู่ แล้วโหลดหน้าใหม่และกรอกรหัสผ่านอีกครั้ง
+EN: Wait a moment, reload the page and enter the passcode again.
+JA: 少し待ってから再読み込みし、パスコードを入れ直す
+
+[trouble.3.problem]
+TH: หน้าเว็บแสดง 「การประชุมยังไม่เริ่ม」
+EN: 「This meeting has not started yet」
+JA: 「ミーティングはまだ開始されていません」と表示
+
+[trouble.3.action]
+TH: รอที่หน้านี้ หน้าเว็บจะเปลี่ยนเองเมื่อการประชุมเริ่ม
+EN: Wait on this page. It updates automatically when the meeting starts.
+JA: そのまま待つ（開始すると自動で切り替わる）
+
+[trouble.4.problem]
+TH: ไม่เห็นข้อความภาษาไทย
+EN: No Thai text
+JA: タイ語が出ない
+
+[trouble.4.action]
+TH: ตรวจสอบว่าเลือกภาษา 「ไทย」 ที่มุมขวาบน
+EN: Check that Thai is selected at the top right.
+JA: 右上の言語設定がタイ語か確認
+
+[trouble.5.problem]
+TH: ไม่ได้ยินเสียงแปล
+EN: No interpretation audio
+JA: 通訳音声が聞こえない
+
+[trouble.5.action]
+TH: กดไอคอนรูปหูฟัง และตรวจสอบระดับเสียงของเครื่อง
+EN: Press the headphone icon and check your device volume.
+JA: イヤホンアイコンと端末の音量を確認
+
+[trouble.6.problem]
+TH: หาข้อความของ CoeFont ในแชทไม่พบ
+EN: No CoeFont message in the chat
+JA: チャットにメッセージが見当たらない
+
+[trouble.6.action]
+TH: แจ้งฝ่ายญี่ปุ่นให้กดปุ่ม 「チャットに再送」
+EN: Ask the Japanese side to press 「チャットに再送」.
+JA: 日本側に「チャットに再送」を依頼
+
+[trouble.7.problem]
+TH: ยังใช้งานไม่ได้
+EN: Still not working
+JA: それでも直らない
+
+[trouble.7.action]
+TH: แจ้งฝ่ายญี่ปุ่นเป็นภาษาอังกฤษ (ดูตารางด้านล่าง)
+EN: Tell the Japanese side in English (see the table below).
+JA: 英語で日本側に伝える（下の表）
+
+[phrase.th.1]
+TH: ไม่เห็นข้อความภาษาไทย
+EN: I can’t see the Thai text.
+JA: タイ語の文字が見えません
+
+[phrase.th.2]
+TH: ไม่ได้ยินเสียงแปล
+EN: I can’t hear the interpretation.
+JA: 通訳音声が聞こえません
+
+[phrase.th.3]
+TH: กรุณาส่งลิงก์ CoeFont ในแชทอีกครั้ง
+EN: Please resend the CoeFont link in the chat.
+JA: CoeFontのリンクをチャットに再送してください
+
+[phrase.th.4]
+TH: ต้องกรอกรหัสผ่านอะไร
+EN: Which passcode should I enter?
+JA: どのパスコードを入れればよいですか
+
+[phrase.ja.1]
+TH: กรุณาเลือกภาษาไทยที่มุมขวาบน
+EN: Please select Thai at the top right.
+JA: 右上でタイ語を選んでください
+
+[phrase.ja.2]
+TH: กรุณากดไอคอนรูปหูฟัง
+EN: Please press the headphone icon.
+JA: イヤホンアイコンを押してください
+
+[phrase.ja.3]
+TH: กรุณาโหลดหน้าใหม่แล้วกรอกรหัสผ่านอีกครั้ง
+EN: Please reload and enter the passcode again.
+JA: 再読み込みしてパスコードを入れ直してください
+
+[phrase.ja.4]
+TH: ตอนนี้เห็นข้อความภาษาไทยหรือไม่
+EN: Can you see the Thai text now?
+JA: タイ語の文字は見えていますか
+
+[phrase.ja.5]
+TH: กรุณาพูดช้าลงเล็กน้อย
+EN: Please speak a little slower.
+JA: 少しゆっくり話してください
